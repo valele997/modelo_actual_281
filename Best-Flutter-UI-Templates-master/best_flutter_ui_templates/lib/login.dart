@@ -8,7 +8,7 @@ import 'package:best_flutter_ui_templates/app_theme.dart';
 import 'package:flutter/services.dart';
 import 'navigation_home_screen.dart';
 import 'package:flutter/foundation.dart' show kIsWeb;
-import 'package:best_flutter_ui_templates/Principal.dart';
+import 'package:best_flutter_ui_templates/Principal_participante.dart';
 import 'package:flutter/widgets.dart';
 
 void main() async {
@@ -128,7 +128,8 @@ class _HomeState extends State<Home> {
 
   doLogin(String email, String password) async {
     var res = await userLogin(email.trim(), password.trim());
-    print(res.toString());
+
+    print(res.toString() + "+++++++++");
     if (res['success']) {
       //here we set data
       /*
